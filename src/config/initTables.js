@@ -126,24 +126,6 @@ async function initTables() {
     ON CONFLICT (name) DO NOTHING;
   `);
 
-  // ---------------------------------------------------------------
-  // CLEAN TABLES
-  // ---------------------------------------------------------------
-  await client.query(`
-    DELETE FROM products;
-    DELETE FROM users;
-    DELETE FROM files;
-  `);
-
-  // ---------------------------------------------------------------
-  // RESET SEQUENCES
-  // ---------------------------------------------------------------
-  await client.query(`
-    ALTER SEQUENCE products_id_seq RESTART WITH 1;
-    ALTER SEQUENCE users_id_seq RESTART WITH 1;
-    ALTER SEQUENCE files_id_seq RESTART WITH 1;
-  `);
-
   console.log("🎉 Banco configurado com sucesso!");
   await client.end();
 }

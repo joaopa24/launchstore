@@ -7,7 +7,7 @@
 
 <p> Launchstore is an e-commerce platform developed in Rocketseat's Launchbase bootcamp. It was built using HTML, CSS, JavaScript, Node.js, and PostgreSQL. </p>
 
-<h2> <img src="https://i.dlpng.com/static/png/6577858_preview.png" width="50px" align="center"/> How to install</h2>
+<h2>How to install</h2>
 <p> You need to install  <a href="https://nodejs.org/en/">Node.js</a>, <a href="https://www.postgresql.org/">PostgreSQL</a>
 
 <h3> Steps <h3>
@@ -23,5 +23,10 @@ $ npm install
 
 Start the server
 $ npm start
-
 ```
+
+<h2>Results</h2>
+
+![](./public/images/readme/image1.png)
+![](./public/images/readme/image2.png)
+![](./public/images/readme/image3.png)
